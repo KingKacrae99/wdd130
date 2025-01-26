@@ -1,0 +1,58 @@
+:root{
+    --headingsparagraph-color:#0D0F0E;
+}
+body{
+    font-family: 'open sans', sans-serif;
+    color: var(--headingsparagraph-color);
+}
+h1,h2{
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+    color: var(--headingsparagraph-color);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--headingsparagraph-color);
+}
+
+.hero{
+    position: relative;
+}
+.hero img{
+    display: block;
+    width:100%;
+    height: auto;
+}
+.hero h1{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: white;
+    padding: 0.5rem;
+}
+.hero article{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 1rem;
+
+}
+.hero article img{
+    float: right;
+    margin: 1rem;
+    width:200px;
+    height: auto;
+}
+nav a img{
+    display: block;
+    width:2%;
+    height: auto;
+    float: left;
+}
+footer nav a{
+    text-decoration: none;
+}
