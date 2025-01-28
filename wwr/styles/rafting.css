@@ -1,19 +1,61 @@
 :root{
-    --headingsparagraph-color:#0D0F0E;
+    --primary-color:#0D0F0E;
+    --secondary-color:#2b4dbd;
+    --accent1-color: #f5aa13;
+    --accent2_color: #ffffff;
 }
 body{
     font-family: 'open sans', sans-serif;
-    color: var(--headingsparagraph-color);
+    margin: 0;
+    padding:0;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
 }
 h1,h2{
     font-family: 'open sans', sans-serif;
     margin: 0;
-    color: var(--headingsparagraph-color);
+    color: var(--accent1-color);
+}
+p{
+    color: var(--accent2_color);
 }
 
-nav a{
+header{
+    /*background-color: var(--secondary-color); */
+    margin: 1rem, auto;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 100%;
+}
+header img{
+    margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+    border-radius: 10%;
+}
+
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+}
+.navigation li{
+    flex: 1 1 auto;
+}
+
+.navigation a{
+    display: block;
+    color: var(--accent2_color);
+    padding: 20px;
     text-decoration: none;
-    color: var(--headingsparagraph-color);
+}
+.navigation a:hover {
+	color: var(--accent1-color);
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 .hero{
@@ -23,13 +65,15 @@ nav a{
     display: block;
     width:100%;
     height: auto;
+    border-bottom: 1px solid #ccc;
 }
 .hero h1{
     position: absolute;
-    top: 20%;
-    left: 40%;
+    top: 15%;
+    left: 38%;
     color: white;
     padding: 0.5rem;
+    text-align: center;
 }
 .hero article{
     position: absolute;
@@ -47,12 +91,63 @@ nav a{
     width:200px;
     height: auto;
 }
-nav a img{
-    display: block;
-    width:2%;
-    height: auto;
-    float: left;
+section{
+    margin: 25px auto;
+    text-align: center;
+    width: 80%;
 }
+section h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section .history-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+.history-content img {
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+}
+section .adventure-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+.adventure-content figure figcaption{
+    color: var(--accent2_color);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    width: 70%;
+    margin: 0 20px;
+}
+footer nav{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+
+footer nav a img{
+    width:25px;
+    height: auto;
+}
+
 footer nav a{
     text-decoration: none;
 }
