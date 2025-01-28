@@ -1,6 +1,5 @@
 :root{
     --primary-color:#0D0F0E;
-    --secondary-color:#2b4dbd;
     --accent1-color: #f5aa13;
     --accent2_color: #ffffff;
 }
@@ -26,7 +25,7 @@ header{
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--accent1-color);
     max-width: 100%;
 }
 header img{
@@ -65,7 +64,7 @@ header img{
     display: block;
     width:100%;
     height: auto;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--accent1-color);
 }
 .hero h1{
     position: absolute;
@@ -129,6 +128,7 @@ footer {
     max-width: 80%;
     margin: 0 auto;
     padding: 20px;
+    border-top: var(--accent1-color);
 }
 footer p{
     text-align: center;
