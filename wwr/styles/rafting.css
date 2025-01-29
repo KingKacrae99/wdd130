@@ -1,7 +1,7 @@
 :root{
     --primary-color:#0D0F0E;
     --accent1-color: #f5aa13;
-    --accent2_color: #ffffff;
+    --accent2-color: #ffffff;
 }
 body{
     font-family: 'open sans', sans-serif;
@@ -16,12 +16,12 @@ h1,h2{
     color: var(--accent1-color);
 }
 p{
-    color: var(--accent2_color);
+    color: var(--accent2-color);
 }
 
 header{
     /*background-color: var(--secondary-color); */
-    margin: 1rem, auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 150px 1fr 1fr;
     align-items: center;
@@ -47,7 +47,7 @@ header img{
 
 .navigation a{
     display: block;
-    color: var(--accent2_color);
+    color: var(--accent2-color);
     padding: 20px;
     text-decoration: none;
 }
@@ -70,7 +70,7 @@ header img{
     position: absolute;
     top: 15%;
     left: 38%;
-    color: white;
+    color: var(--accent2-color);
     padding: 0.5rem;
     text-align: center;
 }
@@ -80,7 +80,7 @@ header img{
     left: 5%;
     right: 5%;
     background-color: rgba(0,0,0,0.6);
-    color: white;
+    color: var(--accent2-color);
     padding: 1rem;
 
 }
@@ -119,7 +119,7 @@ section .adventure-content{
     gap: 10px;
 }
 .adventure-content figure figcaption{
-    color: var(--accent2_color);
+    color: var(--accent2-color);
 }
 footer {
     display: flex;
