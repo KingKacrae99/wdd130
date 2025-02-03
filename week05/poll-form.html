@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD130 Web Fundamentals | HTML Form User Poll</title>
+    <meta name="author" content="King Emmanuel aguomba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD | King Aguomba | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <diV class="form-item column2 ">
+                    <label for="fullname">Full Name
+                        <input type="text" id="fullname" name="fullname">
+                    </label>
+                </diV>
+                <div class="form-item column2">
+                    <label for="useremail">Email
+                        <input type="email" id="useremail" name="useremail">
+                    </label>
+                </diV>
+            </fieldset>
+            <fieldset>
+                <legend>Question</legend>
+                <div class="form-item">
+                    <label for="favourite">what is your favourite Browser
+                        <select id="browser" name="browser">
+                            <option>select an option </option>
+                            <option value="chrome">Chrome</option>
+                            <option value="firefox">Firefox</option>
+                            <option value="edge">Edge</option>
+                            <option value="other">other</option>
+                        </select>
+                    </label>
+                </diV>
+                <div class="form-item">
+                    <label for="pet">Do you have a household pet
+                        <input type="checkbox" id="pet" name="pet">
+                    </label>
+                </diV>
+                <div class="form-item">
+                    <label for="feedback">List the places you have lived.
+                        <textarea id="feedback" name="feedback" rows="4" placeholder="4th avenue Gwarinpa, Abuja..."></textarea>
+                    </label>
+                </diV>
+            </fieldset>
+            <button type="submit">Sumbit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 | HTML Form - User Polling Activity | 🧑‍💻 King Emmanuel Aguomba</p>
+    </footer>
+</body>
+</html>
