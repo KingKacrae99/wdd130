@@ -116,6 +116,10 @@ section .contact-info{
     justify-content: space-between;
     text-align: justify;
 }
+section .contact-info iframe {
+    border:0;
+    border-radius: 5px;
+}
 
 section .adventure-content{
     display: flex;
