@@ -9,6 +9,7 @@ body{
     padding:0;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    overflow-x: hidden;
 }
 h1,h2{
     font-family: 'open sans', sans-serif;
@@ -66,6 +67,18 @@ header img{
     height: auto;
     border-bottom: 1px solid var(--accent1-color);
 }
+.hero .head-text{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding:2.5rem;
+}
+.hero .head-text h1{
+    color: var(--accent1-color);
+    padding: 0.5rem;
+}
 .hero h1{
     position: absolute;
     top: 15%;
@@ -74,6 +87,8 @@ header img{
     padding: 0.5rem;
     text-align: center;
 }
+
+/* Hero article for about & contact us page*/
 .hero article{
     position: absolute;
     top: 40%;
@@ -90,8 +105,169 @@ header img{
     width:200px;
     height: auto;
 }
+
+.hero .hero-text h2 {
+    position: absolute;
+    top:40%;
+    left: 23%;
+    right:23%;
+    color: var(--accent2-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.hero .hero-text p {
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    right:25%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+}
+.hero .cta-btn{
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    right: 44%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .cta-btn:hover{
+    background-color: #d48c0d;
+    transition: 0.3s;
+}
+
+/* End Hero article*/
+
+/*homepage hero */
+.hero .home_paragraph  {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    right: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: justify;
+    font-weight: 700;
+    color:wheat;
+    padding: 1.5rem;
+}
+.hero .cta {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    position:absolute;
+    top:55%;
+    left:38%;
+    right: 38%;
+    padding: 1.5rem;
+}
+
+.hero .cta a{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .cta #btn1 {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+}
+.hero .cta  #btn2 {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+.hero .cta  #btn1:hover{
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    transition:1.0s;
+}
+.hero .cta  #btn2:hover{
+    background-color: var(--primary-color);
+    transition:1.0s;
+    color: var(--accent1-color);
+}
+section .adv-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+section .adv-content .card{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 0 7px var(--accent2-color);
+    border-radius: 5px;
+}
+
+section .adv-content .card:hover{
+    width: 510px;
+    height: 410px;
+    box-shadow: 0 0 7px var(--accent2-color);
+    transition: 1s;
+}
+section .adv-content .card  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+section .adv-content .card .caption{
+    position: absolute;
+    width: 95%;
+    top: 86%;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: .8rem;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 5px;
+}
+section .adv-content .card .caption a {
+    color:var(--accent2-color);
+    text-decoration: none;
+}
+section .adv-content .card .caption a:hover{
+    color: var(--accent1-color);
+}
+section .newsletter{
+    display: flex;
+    flex-direction: row;
+    row-gap:10px;
+    justify-content: space-evenly;
+
+}
+section .newsletter .image{
+    width: 60%;
+    height: auto;
+    padding: .5rem;
+}
+section .newsletter .image img{
+    border-radius: 5px;
+    padding: 2.5rem;
+    margin-top: 30px;
+}
+section .newsletter .form{
+    width: 40%;
+    right: 15%;
+    height: auto;
+}
+
+/* End Homepage */
+
+/*Sectinon*/
 section{
-    margin: 25px auto;
+    margin: 30px auto;
     text-align: center;
     width: 80%;
 }
@@ -99,12 +275,14 @@ section h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+/*About us page  */
 section .history-content{
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: justify;
 }
+/* class section */
 .history-content img {
     width: 200px;
     height: auto;
@@ -120,7 +298,6 @@ section .contact-info iframe {
     border:0;
     border-radius: 5px;
 }
-
 section .adventure-content{
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +309,88 @@ section .adventure-content{
 .adventure-content figure figcaption{
     color: var(--accent2-color);
 }
+section .adventure-features{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* Classes */
+.adventure-features figure img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ccc;
+
+}
+.adventure-features figure figcaption{
+    color: var(--accent1-color);
+    font-weight: 700;
+}
+/* Trips */
+.trip-options h2{
+    font-weight: 800;
+}
+.trip-options .trips-article{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.trip-options .trips-article .trips{
+    width: 320px;
+    height: auto;
+}
+.trip-options .trips-article .trips img{
+    width: 300px;
+    padding: 0 10px;
+    height: 170px;
+    border-radius: 5px;
+}
+.trip-options .trips-article .trips h3{
+    margin-top: 0%;
+    margin-bottom:0%;
+    color: var(--accent1-color);
+}
+.trip-options .trips-article .trips p{
+    width: 100%;
+    margin-top: 2%;
+}
+/*End Trips */
+
+/* End Sections /Classes*/
+
+section table{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+section table tr{
+    margin: auto;
+    padding: 10px;
+}
+section table tr th{
+    margin: 20px;
+    padding: 1rem;
+    font-weight: 800;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+}
+
+section table tr td{
+    margin: 20px;
+    padding: 1rem;
+    font-weight: 700;
+}
+th, td{
+    border: 1px solid var(--accent1-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/*Contact us page form*/
 form{
     display: flex;
     flex-direction: column;
@@ -202,7 +461,11 @@ button{
 button:hover{
     background-color: darkorange;
 }
+/*End contact us page form*/
 
+
+
+/*footer Selector */
 footer {
     display: flex;
     align-items: center;
@@ -233,3 +496,4 @@ footer nav a img{
 footer nav a{
     text-decoration: none;
 }
+/*End Footer */
